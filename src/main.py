@@ -17,7 +17,7 @@ parser.add_argument('--user_triple_set_size', type=int, default=8, help='the num
 parser.add_argument('--item_triple_set_size', type=int, default=64, help='the number of triples in triple set of item')
 parser.add_argument('--agg', type=str, default='concat', help='the type of aggregator (sum, pool, concat)')
 
-parser.add_argument('--use_cuda', type=bool, default=True, help='whether using gpu or cpu')
+parser.add_argument('--use_cuda', type=bool, action='store_true', help='whether using gpu or cpu')
 parser.add_argument('--show_topk', type=bool, default=False, help='whether showing topk or not')
 parser.add_argument('--random_flag', type=bool, default=False, help='whether using random seed or not')
 
