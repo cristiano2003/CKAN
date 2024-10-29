@@ -22,7 +22,6 @@ parser.add_argument('--show_topk', type=bool, default=False, help='whether showi
 parser.add_argument('--random_flag', type=bool, default=False, help='whether using random seed or not')
 
 args = parser.parse_args()
- 
 
 def set_random_seed(np_seed, torch_seed):
     np.random.seed(np_seed)                  
