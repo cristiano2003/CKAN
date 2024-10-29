@@ -34,5 +34,6 @@ if not args.random_flag:
 
 print("Staring train")  
 data_info = load_data(args)
+print("loading data")
 train(args, data_info)
     
