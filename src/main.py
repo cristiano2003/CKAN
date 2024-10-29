@@ -31,7 +31,8 @@ def set_random_seed(np_seed, torch_seed):
 
 if not args.random_flag:
     set_random_seed(304, 2019)
-    
+
+print("Staring train")  
 data_info = load_data(args)
 train(args, data_info)
     
