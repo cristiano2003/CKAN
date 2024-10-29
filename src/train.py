@@ -105,6 +105,7 @@ def _init_model(args, data_info):
     model = CKAN(args, n_entity, n_relation)
     if args.use_cuda:
         model.to(torch.device('cuda:0'))
+    print(model.__class__)
     optimizer = torch.optim.Adam(
         filter(lambda p: p.requires_grad, model.parameters()),
         lr = args.lr,
